@@ -1,0 +1,21 @@
+﻿@model Usuario
+@{
+    ViewData["Title"] = "Cadastro";
+}
+
+@if (Model != null)
+{
+    <alert mensagem="@ViewData["msg"]"></alert>
+}
+else
+{
+    <p>Preencha o formulário</p>
+}
+
+<h1>@ViewData["Title"]</h1>
+<form asp-action="Index">
+
+    <partial name="_FormCadastroUsuario" />
+
+    <Botao texto="Cadastrar"></Botao>
+</form>

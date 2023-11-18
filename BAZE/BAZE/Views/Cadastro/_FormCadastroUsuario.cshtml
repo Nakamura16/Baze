@@ -1,0 +1,46 @@
+﻿@model Usuario
+@{
+}
+
+<div class="mb-3">
+    <label asp-for="Nome"></label>
+    <input asp-for="Nome" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="RegistroGeral"></label>
+    <input asp-for="RegistroGeral" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="NumeroPessoaFisica"></label>
+    <input asp-for="NumeroPessoaFisica" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Email"></label>
+    <input asp-for="Email" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="NomeUsuario"></label>
+    <input asp-for="NomeUsuario" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Senha"></label>
+    <input asp-for="Senha" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="DataNascimento"></label>
+    <input asp-for="DataNascimento" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="PesoKG"></label>
+    <input asp-for="PesoKG" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="AlturaCM"></label>
+    <input asp-for="AlturaCM" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Genero"></label>
+    <select asp-for="Genero" asp-items="@Html.GetEnumSelectList<Genero>()" class="form-select">
+        <option>Selecione</option>
+    </select>
+</div>
