@@ -10,7 +10,7 @@ builder.Services.AddControllersWithViews();
 var conexao = builder.Configuration.GetConnectionString("conexao");
 
 //Configurar o injecao de dependencia do Contexto, utilizando tb a string de conexao
-//builder.Services.AddDbContext<HospitalContext>(op => op.UseSqlServer(conexao));
+builder.Services.AddDbContext<UsuarioContext>(op => op.UseSqlServer(conexao));
 
 var app = builder.Build();
 

@@ -11113,11 +11113,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Andre\\2TDSS\\GLOBAL-2\\BAZE\\novo\\BAZE\\BAZE\\BAZE.csproj",
+      "projectUniqueName": "C:\\Andre\\2TDSS\\GLOBAL-2\\BAZE\\novo\\Baze\\BAZE\\BAZE\\BAZE.csproj",
       "projectName": "BAZE",
-      "projectPath": "C:\\Andre\\2TDSS\\GLOBAL-2\\BAZE\\novo\\BAZE\\BAZE\\BAZE.csproj",
+      "projectPath": "C:\\Andre\\2TDSS\\GLOBAL-2\\BAZE\\novo\\Baze\\BAZE\\BAZE\\BAZE.csproj",
       "packagesPath": "C:\\Users\\andre\\.nuget\\packages\\",
-      "outputPath": "C:\\Andre\\2TDSS\\GLOBAL-2\\BAZE\\novo\\BAZE\\BAZE\\obj\\",
+      "outputPath": "C:\\Andre\\2TDSS\\GLOBAL-2\\BAZE\\novo\\Baze\\BAZE\\BAZE\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\andre\\AppData\\Roaming\\NuGet\\NuGet.Config",

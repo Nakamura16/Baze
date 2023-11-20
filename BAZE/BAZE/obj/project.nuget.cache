@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "SqN4kaPtAqH4TgCr94pNcoe9UBnUaDQuaIW/X7PjMA4b/8qNRvwXT0Gfy7/5vY3w9GHnu0OvcuzvkTX6N3S/9A==",
+  "dgSpecHash": "4zoyNC2vjVXcG8cPTPF1ia032l9Srh3im7F29IPq0gMBJsD2Uz8ammGjO+mrSOow+S9VcxkPyXAOQjzn90YXCQ==",
   "success": true,
-  "projectFilePath": "C:\\Andre\\2TDSS\\GLOBAL-2\\BAZE\\novo\\BAZE\\BAZE\\BAZE.csproj",
+  "projectFilePath": "C:\\Andre\\2TDSS\\GLOBAL-2\\BAZE\\novo\\Baze\\BAZE\\BAZE\\BAZE.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\andre\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\andre\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

@@ -4,16 +4,11 @@ using Microsoft.EntityFrameworkCore;
 namespace BAZE.Persistencia
 {
     //Classe que gerencia as entidades
-    public class HospitalContext : DbContext
+    public class UsuarioContext : DbContext
     {
-        //public DbSet<Paciente> Pacientes { get; set; }
-        //public DbSet<Medico> Medicos { get; set; }
-        //public DbSet<Medicamento> Medicamentos { get; set; }
-        //public DbSet<Exame> Exames { get; set; }
-        //public DbSet<Endereco> Enderecos { get; set; }
-        //public DbSet<PacienteMedicamento> PacientesMedicamentos { get; set; }
+        public DbSet<Usuario> Usuarios { get; set; }
 
-        //public HospitalContext(DbContextOptions op) : base(op) { }
+        public UsuarioContext(DbContextOptions op) : base(op) { }
 
         //protected override void OnModelCreating(ModelBuilder modelBuilder)
         //{
