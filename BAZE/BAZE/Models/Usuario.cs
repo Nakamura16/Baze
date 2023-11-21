@@ -1,22 +1,33 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BAZE.Models
 {
+    //[Table("T_Usuario")]
     public class Usuario
     {
+        [Column("Id"), HiddenInput]
         public int Id { get; set; }
+        [Required]
         public string? Nome { get; set; }
         public string? RegistroGeral { get; set; }
         public string? NumeroPessoaFisica { get; set; }
         public string? Email { get; set; }
         public string? NomeUsuario { get; set; }
 
-        [DataType(DataType.Date), Display(Name = "Data de Criação")]
+        //[Column("Dt_Nascimento"), Display(Name = "Data de Nascimento"),DataType(DataType.Date)]
         public DateTime DataNascimento { get; set; }
         public double PesoKG { get; set; }
         public int AlturaCM { get; set; }
         public Genero Genero { get; set; }
         public string Senha { get; set; }
+        
+        //relacionamentos
+        public IList<Telefone> telefones { get; set; }
+        public IList<Bike> bikes { get; set; }
+        public IList<Endereco> Enderecos { get; set; }
+        public IList<Desafio> Desafios { get; set; }
     }
 }
 
