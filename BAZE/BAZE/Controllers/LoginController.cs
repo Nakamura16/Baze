@@ -20,7 +20,6 @@ namespace BAZE.Controllers
                 && u.Senha == usuario.Senha).FirstOrDefault();
             if (username != null)
             {
-                HttpContext.Session.SetString("LoggedUser", usuario.Nome);
                 return View();
             }
             return RedirectToAction("Index");

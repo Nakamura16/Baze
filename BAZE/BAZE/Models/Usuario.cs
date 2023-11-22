@@ -7,7 +7,7 @@ namespace BAZE.Models
     //[Table("T_Usuario")]
     public class Usuario
     {
-        [Column("Id"), HiddenInput]
+        [Column("Id"), HiddenInput, Key]
         public int Id { get; set; }
         [Required]
         public string? Nome { get; set; }
@@ -24,10 +24,11 @@ namespace BAZE.Models
         public string Senha { get; set; }
         
         //relacionamentos
-        public IList<Telefone>? telefones { get; set; }
-        public IList<Bike>? bikes { get; set; }
+        public IList<Telefone>? Telefones { get; set; }
+        public IList<Bike>? Bikes { get; set; }
         public IList<Endereco>? Enderecos { get; set; }
         public IList<Desafio>? Desafios { get; set; }
+        public IList<Corrida>? Corridas { get; set; }
     }
 }
 

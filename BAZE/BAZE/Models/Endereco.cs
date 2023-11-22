@@ -1,10 +1,13 @@
-﻿using System.ComponentModel.DataAnnotations.Schema;
+﻿using Microsoft.AspNetCore.Mvc;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BAZE.Models
 {
     [Table("T_Endereco")]
     public class Endereco
     {
+        [Column("Id"), HiddenInput, Key]
         public int Id { get; set; }
         public string Logradouro { get; set; }
         public int Numero { get; set; }

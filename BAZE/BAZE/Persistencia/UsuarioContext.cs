@@ -11,6 +11,7 @@ namespace BAZE.Persistencia
         public DbSet<Endereco> Enderecos { get; set; }
         public DbSet<Corrida> Corridas { get; set; }
         public DbSet<Desafio> Desafios { get; set; }
+        public DbSet<Bike> Bikes { get; set; }
 
         public UsuarioContext(DbContextOptions op) : base(op) { }
 
