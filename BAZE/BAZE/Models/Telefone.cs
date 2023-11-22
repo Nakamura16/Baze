@@ -7,7 +7,7 @@ namespace BAZE.Models
     [Table("T_Usuario_Telefone")]
     public class Telefone
     {
-        [Column("Id"), HiddenInput]
+        [Column("Id"), HiddenInput, Key]
         public int Id { get; set; }
         public string Numero { get; set; }
         public int DDD { get; set; }

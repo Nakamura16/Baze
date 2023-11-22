@@ -1,0 +1,34 @@
+﻿@model Bike
+@{
+}
+
+<div class="mb-3">
+    <label asp-for="Nome"></label>
+    <input asp-for="Nome" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Aro"></label>
+    <input asp-for="Aro" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="NrQuadro"></label>
+    <input asp-for="NrQuadro" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Peso"></label>
+    <input asp-for="Peso" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="Cor"></label>
+    <input asp-for="Cor" class="form-control" />
+</div>
+<div class="mb-3">
+    <label asp-for="tipo"></label>
+    <select asp-for="tipo" asp-items="@Html.GetEnumSelectList<Tipo>()" class="form-select">
+        <option>Selecione</option>
+    </select>
+</div>
+<div class="mb-3">
+    <label asp-for="QtdMarchas"></label>
+    <input asp-for="QtdMarchas" class="form-control" />
+</div>

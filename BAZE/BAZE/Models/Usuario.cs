@@ -24,10 +24,10 @@ namespace BAZE.Models
         public string Senha { get; set; }
         
         //relacionamentos
-        public IList<Telefone> telefones { get; set; }
-        public IList<Bike> bikes { get; set; }
-        public IList<Endereco> Enderecos { get; set; }
-        public IList<Desafio> Desafios { get; set; }
+        public IList<Telefone>? telefones { get; set; }
+        public IList<Bike>? bikes { get; set; }
+        public IList<Endereco>? Enderecos { get; set; }
+        public IList<Desafio>? Desafios { get; set; }
     }
 }
 

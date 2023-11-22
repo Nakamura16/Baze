@@ -34,13 +34,18 @@
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Login" asp-action="index">Login</a>
                         </li>
+@*                        @if (HttpContext.Session.GetString("LoggedUser") != null)
+                        {
+                            
+                        }*@
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Perfil
                             </a>
                             <ul class="dropdown-menu">
                                 <li><a class="dropdown-item" asp-action="Index" asp-controller="Perfil">Meus Dados</a></li>
-                                <li><a class="dropdown-item" asp-action="Index" asp-controller="Perfil">Bikes</a></li>
+                                <li><a class="dropdown-item" asp-action="Bikes" asp-controller="Perfil">Bikes</a></li>
+                                <li><a class="dropdown-item" asp-action="Corridas" asp-controller="Perfil">Corridas</a></li>
                                 <li><a class="dropdown-item">Logout</a></li>
                             </ul>
                         </li>
