@@ -1,0 +1,39 @@
+﻿@model Bike
+@{
+}
+<form asp-action="Busca">
+
+    <div class="mb-3">
+        <label asp-for="Nome"></label>
+        <input asp-for="Nome" class="form-control" />
+    </div>
+
+    <botao texto="Buscar"></botao>
+</form>
+
+@if (Model != null)
+{
+    <p style="color:grey">@ViewData["msg"]</p>
+    <div class="col-sm-6 col-md-4" style="padding: 10px">
+        <div class="thumbnail" style="background-color:#D3D3D3; border-radius:5%">
+            <div class="caption" style="padding: 20px">
+                <h3>@Model.Nome</h3>
+                <p>
+                    Peso: @Model.Peso
+                    Numero Quadro: @Model.NrQuadro
+                    Aro: @Model.Aro
+                    Tipo: @Model.tipo
+                    Quantidade de marchas: @Model.QtdMarchas
+                    Cor: @Model.Cor
+                </p>
+                <p><botao texto="editar"></botao><botao texto="excluir" style="background-color:red; border-color: red"></botao></p>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <p style="color:red">Nenhum usuário encontrado</p>
+}
+
+<a asp-action="index" asp-controller="Perfil">Voltar</a>

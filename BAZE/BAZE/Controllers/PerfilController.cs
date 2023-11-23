@@ -46,5 +46,18 @@ namespace BAZE.Controllers
         {
             return View();
         }
+
+        [HttpPost]
+        public IActionResult Busca(Bike bike)
+        {
+            var find = _context.Bikes.Where(b => b.Nome == bike.Nome).FirstOrDefault();
+            ViewData["msg"] = "Bike " + bike.Nome + " encontrada!";
+            return View(bike);
+        }
+
+        public IActionResult Busca()
+        {
+            return View();
+        }
     }
 }
