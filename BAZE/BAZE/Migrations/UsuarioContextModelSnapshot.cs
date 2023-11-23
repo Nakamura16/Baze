@@ -26,8 +26,7 @@ namespace BAZE.Migrations
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -61,15 +60,14 @@ namespace BAZE.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("T_Bike");
+                    b.ToTable("Bikes");
                 });
 
             modelBuilder.Entity("BAZE.Models.Corrida", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -86,15 +84,14 @@ namespace BAZE.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("T_Corrida");
+                    b.ToTable("Corridas");
                 });
 
             modelBuilder.Entity("BAZE.Models.Desafio", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -120,15 +117,14 @@ namespace BAZE.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("T_Desafio");
+                    b.ToTable("Desafios");
                 });
 
             modelBuilder.Entity("BAZE.Models.Endereco", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -166,15 +162,14 @@ namespace BAZE.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("T_Endereco");
+                    b.ToTable("Enderecos");
                 });
 
             modelBuilder.Entity("BAZE.Models.Telefone", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasColumnName("Id");
+                        .HasColumnType("int");
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
@@ -195,7 +190,7 @@ namespace BAZE.Migrations
 
                     b.HasIndex("UsuarioId");
 
-                    b.ToTable("T_Usuario_Telefone");
+                    b.ToTable("Telefones");
                 });
 
             modelBuilder.Entity("BAZE.Models.Usuario", b =>
@@ -220,7 +215,6 @@ namespace BAZE.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("Nome")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("NomeUsuario")

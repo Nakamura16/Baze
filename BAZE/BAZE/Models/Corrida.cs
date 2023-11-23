@@ -4,10 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BAZE.Models
 {
-    [Table("T_Corrida")]
+    //[Table("T_Corrida")]
     public class Corrida
     {
-        [Column("Id"), HiddenInput, Key]
+        //[Column("Id"), HiddenInput, Key]
         public int Id { get; set; }
         public int Quilometros { get; set; }
         public int TempoMin { get; set; }

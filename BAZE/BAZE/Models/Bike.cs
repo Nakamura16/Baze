@@ -4,10 +4,10 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BAZE.Models
 {
-    [Table("T_Bike")]
+    //[Table("T_Bike")]
     public class Bike
     {
-        [Column("Id"), HiddenInput, Key]
+        //[Column("Id"), HiddenInput, Key]
         public int Id { get; set; }
         public string Nome { get; set; }
         public int Aro { get; set; }

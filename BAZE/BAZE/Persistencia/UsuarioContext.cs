@@ -24,7 +24,16 @@ namespace BAZE.Persistencia
             //Configurar a relação da tabela associativa com o Paciente
             modelBuilder.Entity<Telefone>()
                 .HasKey(t => t.Id);
-                
+
+            modelBuilder.Entity<Bike>()
+                .HasKey(b => b.Id);
+
+            modelBuilder.Entity<Endereco>()
+                .HasKey(e => e.Id);
+
+            modelBuilder.Entity<Corrida>()
+                .HasKey(c => c.Id);
+
             //    //Configurar a relação da tabela associativa com o Medicamento
             //    modelBuilder.Entity<PacienteMedicamento>()
             //        .HasOne(p => p.Medicamento)
@@ -32,7 +41,7 @@ namespace BAZE.Persistencia
             //        .HasForeignKey(p => p.MedicamentoId);
 
             //    base.OnModelCreating(modelBuilder);
-            }
+        }
 
         }
 }

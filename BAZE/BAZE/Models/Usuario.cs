@@ -4,12 +4,11 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace BAZE.Models
 {
-    //[Table("T_Usuario")]
+    //[Table("T_Usuario", Schema = "Usuario")]
     public class Usuario
     {
         [Column("Id"), HiddenInput, Key]
         public int Id { get; set; }
-        [Required]
         public string? Nome { get; set; }
         public string? RegistroGeral { get; set; }
         public string? NumeroPessoaFisica { get; set; }
