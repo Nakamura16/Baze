@@ -25,7 +25,7 @@ namespace BAZE.Controllers
 
         //cadastra a bike
         [HttpPost]
-        public IActionResult Bikes(Bike bike)
+        public IActionResult CadastroBikes(Bike bike)
         {
             Usuario usuario = new Usuario();
             usuario.Senha = "123";
@@ -35,12 +35,6 @@ namespace BAZE.Controllers
             _context.SaveChanges();
             ViewData["msg"] = "Bike " + bike.Nome + " cadastrado com Sucesso!";
             return View(bike);
-        }
-
-        [HttpPost]
-        public IActionResult CadastroBikes(Usuario usuario)
-        {
-            return View();
         }
 
         public IActionResult CadastroBikes()

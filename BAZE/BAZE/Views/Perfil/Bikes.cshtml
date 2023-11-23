@@ -2,16 +2,11 @@
 @{
 }
 
-@if (Model != null)
-{
-    <alert mensagem="@ViewData["msg"]"></alert>
-}
-
 <a asp-action="CadastroBikes" asp-controller="Perfil">Cadastrar Bikes</a>
 
 @foreach (var bike in Model)
 {
-    <div class="col-sm-6 col-md-4" style="padding: 40px">
+    <div class="col-sm-6 col-md-4" style="padding: 10px">
         <div class="thumbnail" style="background-color:#D3D3D3; border-radius:5%">
             <div class="caption" style="padding: 20px">
                 <h3>@bike.Nome</h3>
@@ -28,36 +23,3 @@
         </div>
     </div>
 }
-
-@*<div class="row" style="padding-top: 40px">
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail" style="background-color:#D3D3D3; border-radius:5%">
-            <img src="..." alt="...">
-            <div class="caption" style="padding: 20px">
-                <h3>Thumbnail label</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p><botao texto="editar"></botao><botao texto="excluir" style="background-color:red; border-color: red"></botao></p>
-            </div>
-        </div>
-    </div>
-    <div class="col-sm-6 col-md-4">
-        <div class="thumbnail" style="background-color:#D3D3D3; border-radius:5%">
-            <img src="..." alt="...">
-            <div class="caption" style="padding: 20px">
-                <h3>Thumbnail label</h3>
-                <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                    Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
-                    in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-                    sunt in culpa qui officia deserunt mollit anim id est laborum.
-                </p>
-                <p><botao texto="editar"></botao><botao texto="excluir" style="background-color:red; border-color: red"></botao></p>
-            </div>
-        </div>
-    </div>
-</div>*@
