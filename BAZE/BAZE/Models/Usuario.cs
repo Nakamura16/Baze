@@ -20,7 +20,7 @@ namespace BAZE.Models
         public double PesoKG { get; set; }
         public int AlturaCM { get; set; }
         public Genero Genero { get; set; }
-        public string Senha { get; set; }
+        public string ?Senha { get; set; }
         
         //relacionamentos
         public IList<Telefone>? Telefones { get; set; }

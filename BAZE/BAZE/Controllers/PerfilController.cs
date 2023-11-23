@@ -26,7 +26,10 @@ namespace BAZE.Controllers
         [HttpPost]
         public IActionResult Bikes(Bike bike)
         {
-
+            Usuario usuario = new Usuario();
+            usuario.Senha = "123";
+            bike.Usuario = usuario;
+            bike.UsuarioId = 1;
             _context.Bikes.Add(bike);
             _context.SaveChanges();
             ViewData["msg"] = "Bike " + bike.Nome + " cadastrado com Sucesso!";
