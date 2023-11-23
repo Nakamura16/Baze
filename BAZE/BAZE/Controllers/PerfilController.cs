@@ -17,12 +17,13 @@ namespace BAZE.Controllers
             return View();
         }
 
-        
         public IActionResult Bikes()
         {
-            return View();
+            var lista = _context.Bikes.ToList();
+            return View(lista);
         }
 
+        //cadastra a bike
         [HttpPost]
         public IActionResult Bikes(Bike bike)
         {

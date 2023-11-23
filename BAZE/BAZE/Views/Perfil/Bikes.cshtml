@@ -1,4 +1,4 @@
-﻿@model Bike
+﻿@model List<Bike>
 @{
 }
 
@@ -9,7 +9,27 @@
 
 <a asp-action="CadastroBikes" asp-controller="Perfil">Cadastrar Bikes</a>
 
-<div class="row" style="padding-top: 40px">
+@foreach (var bike in Model)
+{
+    <div class="col-sm-6 col-md-4" style="padding: 40px">
+        <div class="thumbnail" style="background-color:#D3D3D3; border-radius:5%">
+            <div class="caption" style="padding: 20px">
+                <h3>@bike.Nome</h3>
+                <p>
+                    Peso: @bike.Peso
+                    Numero Quadro: @bike.NrQuadro
+                    Aro: @bike.Aro
+                    Tipo: @bike.tipo
+                    Quantidade de marchas: @bike.QtdMarchas
+                    Cor: @bike.Cor
+                </p>
+                <p><botao texto="editar"></botao><botao texto="excluir" style="background-color:red; border-color: red"></botao></p>
+            </div>
+        </div>
+    </div>
+}
+
+@*<div class="row" style="padding-top: 40px">
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail" style="background-color:#D3D3D3; border-radius:5%">
             <img src="..." alt="...">
@@ -40,4 +60,4 @@
             </div>
         </div>
     </div>
-</div>
+</div>*@
