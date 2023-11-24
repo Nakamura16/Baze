@@ -16,6 +16,23 @@ namespace BAZE.Controllers
         {
             return View();
         }
+        public IActionResult Desafio()
+        {
+            var lista = _context.Desafios.ToList();
+            return View(lista);
+        }
+        public IActionResult CadastroDesafio()
+        {
+            return View();
+        }
+        [HttpPost]
+        public IActionResult CadastroDesafio(Desafio desafio)
+        {
+            _context.Desafios.Add(desafio);
+            _context.SaveChanges();
+            ViewData["msg"] = "Desafio " + desafio.Nome + " cadastrado com Sucesso!";
+            return View(desafio);
+        }
 
         public IActionResult Bikes()
         {

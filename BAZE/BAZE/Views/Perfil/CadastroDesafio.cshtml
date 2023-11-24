@@ -1,0 +1,15 @@
+﻿@model Desafio
+@{
+}
+
+@if (Model != null)
+{
+    <alert mensagem="@ViewData["msg"]"></alert>
+}
+
+<form asp-action="CadastroDesafio">
+
+    <partial name="_FormCadastroDesafio" />
+
+    <botao texto="Cadastrar"></botao>
+</form>

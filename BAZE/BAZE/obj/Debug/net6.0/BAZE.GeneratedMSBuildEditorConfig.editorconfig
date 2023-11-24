@@ -52,8 +52,16 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXENhZGFzdHJvQmlrZXMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[C:/Andre/2TDSS/GLOBAL-2/BAZE/novo/Baze/BAZE/BAZE/Views/Perfil/CadastroDesafio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXENhZGFzdHJvRGVzYWZpby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Andre/2TDSS/GLOBAL-2/BAZE/novo/Baze/BAZE/BAZE/Views/Perfil/Corridas.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXENvcnJpZGFzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andre/2TDSS/GLOBAL-2/BAZE/novo/Baze/BAZE/BAZE/Views/Perfil/Desafio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXERlc2FmaW8uY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Andre/2TDSS/GLOBAL-2/BAZE/novo/Baze/BAZE/BAZE/Views/Perfil/Index.cshtml]
@@ -66,6 +74,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Andre/2TDSS/GLOBAL-2/BAZE/novo/Baze/BAZE/BAZE/Views/Perfil/_FormCadastroBike.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXF9Gb3JtQ2FkYXN0cm9CaWtlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Andre/2TDSS/GLOBAL-2/BAZE/novo/Baze/BAZE/BAZE/Views/Perfil/_FormCadastroDesafio.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUGVyZmlsXF9Gb3JtQ2FkYXN0cm9EZXNhZmlvLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Andre/2TDSS/GLOBAL-2/BAZE/novo/Baze/BAZE/BAZE/Views/Shared/Error.cshtml]
