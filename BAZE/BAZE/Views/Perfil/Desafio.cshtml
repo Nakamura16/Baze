@@ -19,16 +19,16 @@
                 </p>
                 <p>
                 @*<a asp-action="BikeEditar" asp-route-id="@bike.Id">Editar</a>*@
-                @*<button onclick="key.value = @bike.Id" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button onclick="key.value = @desafio.Id" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                     Remover
-                </button>*@
+                </button>
             </div>
         </div>
     </div>
 }
 
 
-@*<!-- Modal -->
+<!-- Modal -->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -37,10 +37,10 @@
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                Deseja realmente apagar a bike?
+                Deseja realmente apagar o Desafio?
             </div>
             <div class="modal-footer">
-                <form asp-action="BikeExcluir">
+                <form asp-action="DesafioExcluir">
                     <input type="hidden" name="id" id="key" />
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
                     <button type="submit" class="btn btn-danger">Sim</button>
@@ -48,4 +48,4 @@
             </div>
         </div>
     </div>
-</div>*@
+</div>

@@ -34,6 +34,15 @@ namespace BAZE.Controllers
             return View(desafio);
         }
 
+        public IActionResult DesafioExcluir(int id)
+        {
+            var desafio = _context.Desafios.Find(id);
+            _context.Desafios.Remove(desafio);
+            _context.SaveChanges();
+            TempData["msg"] = "Desafio removido!";
+            return RedirectToAction("Desafio");
+        }
+
         public IActionResult Bikes()
         {
             var lista = _context.Bikes.ToList();
