@@ -1,0 +1,12 @@
+﻿@model Bike
+@{
+}
+
+<h1>Atualizando a bike: @Model.Nome</h1>
+<form asp-action="BikeEditar">
+
+    <partial name="_FormCadastroBike" />
+    <input asp-for = "Id" />
+
+    <botao texto="Salvar"></botao>
+</form>

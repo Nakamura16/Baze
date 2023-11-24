@@ -4,7 +4,7 @@
 
 <a asp-action="CadastroBikes" asp-controller="Perfil">Cadastrar Bikes</a>
 
-<a asp-controller="Perfil" asp-action="Busca">Buscar</a>
+<a asp-controller="Perfil" asp-action="BikeBusca">Buscar</a>
 
 @foreach (var bike in Model)
 {
@@ -20,8 +20,35 @@
                     Quantidade de marchas: @bike.QtdMarchas
                     Cor: @bike.Cor
                 </p>
-                <p><botao texto="editar"></botao><botao texto="excluir" style="background-color:red; border-color: red"></botao></p>
+                <p>
+                    <a asp-action="BikeEditar" asp-route-id="@bike.Id">Editar</a>
+                    <button onclick="key.value = @bike.Id" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Remover
+                    </button>
             </div>
         </div>
     </div>
 }
+
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">Confirmação</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                Deseja realmente apagar a bike?
+            </div>
+            <div class="modal-footer">
+                <form asp-action="BikeExcluir">
+                    <input type="hidden" name="id" id="key" />
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Não</button>
+                    <button type="submit" class="btn btn-danger">Sim</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

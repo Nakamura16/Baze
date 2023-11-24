@@ -48,16 +48,44 @@ namespace BAZE.Controllers
         }
 
         [HttpPost]
-        public IActionResult Busca(Bike bike)
+        public IActionResult BikeBusca(Bike bike)
         {
             var find = _context.Bikes.Where(b => b.Nome == bike.Nome).FirstOrDefault();
             ViewData["msg"] = "Bike " + bike.Nome + " encontrada!";
             return View(bike);
         }
 
-        public IActionResult Busca()
+        public IActionResult BikeBusca()
         {
             return View();
+        }
+
+        [HttpPost]
+        public IActionResult BikeEditar(Bike bike)
+        {
+            Usuario usuario = new Usuario();
+            usuario.Senha = "123";
+            bike.Usuario = usuario;
+            bike.UsuarioId = 1;
+            _context.Bikes.Update(bike);
+            _context.SaveChanges();
+            TempData["msg"] = "Bike atualizada";
+            return RedirectToAction("bikes");
+        }
+
+        public IActionResult BikeEditar(int id)
+        {
+            var bike = _context.Bikes.First(b => b.Id == id);
+            return View(bike);
+        }
+
+        public IActionResult BikeExcluir(int id)
+        {
+            var bike = _context.Bikes.Find(id);
+            _context.Bikes.Remove(bike);
+            _context.SaveChanges();
+            TempData["msg"] = "Bike removida!";
+            return RedirectToAction("Bikes");
         }
     }
 }

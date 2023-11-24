@@ -1,7 +1,7 @@
 ﻿@model Bike
 @{
 }
-<form asp-action="Busca">
+<form asp-action="BikeBusca">
 
     <div class="mb-3">
         <label asp-for="Nome"></label>
@@ -26,14 +26,13 @@
                     Quantidade de marchas: @Model.QtdMarchas
                     Cor: @Model.Cor
                 </p>
-                <p><botao texto="editar"></botao><botao texto="excluir" style="background-color:red; border-color: red"></botao></p>
             </div>
         </div>
     </div>
 }
 else
 {
-    <p style="color:red">Nenhum usuário encontrado</p>
+    <p style="color:red">Nenhuma Bike encontrada</p>
 }
 
-<a asp-action="index" asp-controller="Perfil">Voltar</a>
+<a asp-action="Bikes" asp-controller="Perfil">Voltar</a>
