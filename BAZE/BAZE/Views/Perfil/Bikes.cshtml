@@ -2,9 +2,9 @@
 @{
 }
 
-<a asp-action="CadastroBikes" asp-controller="Perfil">Cadastrar Bikes</a>
+<a asp-action="CadastroBikes" asp-controller="Perfil" class="btn btn-primary btn-lg" role="button">Cadastrar Bikes</a>
 
-<a asp-controller="Perfil" asp-action="BikeBusca">Buscar</a>
+<a asp-controller="Perfil" asp-action="BikeBusca" class="btn btn-primary btn-lg" role="button">Buscar</a>
 
 @foreach (var bike in Model)
 {
@@ -21,7 +21,7 @@
                     Cor: @bike.Cor
                 </p>
                 <p>
-                    <a asp-action="BikeEditar" asp-route-id="@bike.Id">Editar</a>
+                    <a asp-action="BikeEditar" asp-route-id="@bike.Id" class="btn btn-primary btn-lg" role="button">Editar</a>
                     <button onclick="key.value = @bike.Id" type="button" class="btn btn-sm btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
                         Remover
                     </button>
